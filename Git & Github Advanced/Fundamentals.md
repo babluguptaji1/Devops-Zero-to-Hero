@@ -53,7 +53,20 @@ Access
 
 git remote -v // to varify your git repository is connected to GitHub // if yes : see in Terminal // if no: terminal give no any information. that means black .
 
+git remote add origin <repository url> // for stablish connection with git Terminal to Github Repository
 
-   
+again
+
+git remote -v // for see connection :
+ output : origin <repository url (show here in https method  formate)> (fetch)   
+ output : output : origin <repository url (show here in https method  formate)> (push)
+
+git status
+// on branch master
+// nothing  to  commit, working tree clean
+
+git push origin master
+// userrname for 'https://github.com' :
+// password for  'https://https://<repository username>@github.com :
 
 
