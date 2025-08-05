@@ -66,7 +66,26 @@ git status
 // nothing  to  commit, working tree clean
 
 git push origin master
-// userrname for 'https://github.com' :
-// password for  'https://https://<repository username>@github.com :
+// username for 'https://github.com' : put user name
+// password for  'https://https://<repository username>@github.com : put here personal acess token
+
+git remote -v // // for testing GitHub is connected with git
+git remote set-url origin https://<personal Acess token>@github.com/username/repository name here.git // for many time use , no need to next time even use user name and password or don't ask you terminal nest time username and password. 
+clear//
+git push origin master
+// * [new branch] master -> master
+// pushes Done by git on GitHub repository
+##########################################
 
 
+git pull origin master // github data to git that is called pull from master github
+
+
+for git hub push :
+vim from_local.txt
+git add from_local.txt
+git commit -m "added from local"
+ls
+git branch
+git push origin master
+// master -> master and
