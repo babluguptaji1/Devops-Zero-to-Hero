@@ -17,7 +17,43 @@ git config --global user.name "technical Asthavi" // add user name of your repos
 git config --global user.email "technicalasthavi@gmail.com" // add user email of your repository
 clear // clear windows terminal commands
 history // terninal give you all command list that you have uses in terminal
- 
+ Note : if You have not available file for commit,Your Terminal says to you: " Your working tree is clean"
+cd .. // for child directory to parrent directory
+Note : if you have not uses git init command in directory , Terminal says : fatal: not a git repository (or any of the parent directories): .git
+git branch // to see branches and * (star) is indicate you You are working here.
+git checkout -b Dev // for Switched to a new branch "Dev" name
+-----when you put command under Dev (Branch) : git status // Terminal say : On Branch Dev nothing to commit, working tree clean. and (-b ) use for new branch create.
+-----ls // your all dir/file see in subdirectory (Dev) or  main files or dir copy to Dev branch
+-----vim from_Dev.txt --> This is a file in the Dev Branch -->esc --> :wq --> Back to Terminal
+-----git status // On Branch dev    from_Dev.txt  --> untracked
+------git add from_Dev.txt //stages --> git commit -m "added Dev file" -->
+      Next : --> git branch // to see branch
+     ex: *Dev
+          master
+git checkout master// to move main branch // branch is a seperate line of branches
+Note : sub branch is not copy your dir or file when you want to move parrent branch(master)
 
+git log --oneline // to see comment list with id and massages
+and (HEAD -> master) is notify to you : you have recently added this commit
+
+
+git checkout dev // to switched dev branch
+or
+git switch Dev // to switched dev branch
+
+git checkout -b staging // for create new branch (name = staging) and moved to new branch Staging
+
+for mergging branch :
+
+git merge dev // dev branch copy folder -- to -- master branch // that means main branch update by Dev Branch for commitable file // sure ! before this changes you must to switched master branch then try it.
+
+Access
+1. Personal Access Token
+2. SSH
+
+git remote -v // to varify your git repository is connected to GitHub // if yes : see in Terminal // if no: terminal give no any information. that means black .
+
+
+   
 
 
