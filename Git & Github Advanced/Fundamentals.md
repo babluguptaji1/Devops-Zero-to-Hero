@@ -237,6 +237,46 @@ notFix can merge with master and staging.
 Dev merge by staging, 
 staging merge by Feature branch
 
+Jira Tool : 
+git branch
+git fetch /all branch list
+git checkout -b git-challenge
+
+cd 2025
+cd git
+vim Readme.md
+week 3 challenge on Git
+exit
+git add Readme.md
+git commit -m "TWS-9 added git challenge"
+git push origin git-challenge
+
+on github
+
+90DaysOfDevOps/2025/git/
+Readme.md:
+Week Challenge on Git
+
+compare pull Request with master and git-challenge 
+
+give title : TWS-9(Jira Ticket Id) added git-challenge
+
+but not click on merge button
+
+
+#merge means // pull Request in github
+
+## This is professional way git learn 
+
+git rebase// isme commit history time ke according linear way mentain karti hai
+वह rewrite kar deta hai apke commit history ko
+//isliye rebase bahut kam use hota hai
+
+
+
+git merge// isme commit history ko utal putal kar deta hai
+
+
 
 
 
