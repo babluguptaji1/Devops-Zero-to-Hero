@@ -217,5 +217,27 @@ git push origin networking //networking is a subbranch
 
 Remember: Version control isn't about tracking code--it's a Blueprint of Entire Application.
 
+terminal:
+man git // for all git command list
+
+# Branching Strategy #1
+master/main // default Branch
+// production branch 
+production = master
+testing = staging branch
+Development = Dev Branch
+Features = Feat /for new member 
+Features🔀 >Development✳️ >testing♻️ >production✅️
+
+merge another branch for push Best Quality code 
+
+master can create another branch for Error code/ notFix 
+
+notFix can merge with master and staging. 
+Dev merge by staging, 
+staging merge by Feature branch
+
+
+
 
 
