@@ -1,3 +1,6 @@
+**Start Here:**
+
+```markdown
 # GitHub Advanced
 * Pull Requests = merge Request🔄
 * Revert & Reset🔄
@@ -165,11 +168,93 @@ git diff --staged // Show differnce between staged changes and the last commit
 # GitHub push Methods:
 1. SSH Method:
 --1.Generate on SSH key:
-   using: "ssh-keygen"
+   using: `ssh-keygen`
 
 --2.Copy the SSH key:
-   using: 'cat ~/.ssh/<key_name>.pub'
-3. 
+   using: `cat ~/.ssh/<key_name>.pub`
+
+--3.Navigate to Github > Settings > SSH and GPG keys> New SSH key.
+
+--4.Paste the key and save.
+
+--5.Verify the SSH connection:
+   using: `ssh-T git@github.com`
+
+--6.Now clone the repo using ssh and do whatever you want  and add & commit the changes
+
+--7.Push code:
+   using:`git push origin main`
+
+# 2.HTTPS Method
+--1.Firstly Generate a Personal Access Token
+--2.Use HTTPS URL for your repository:
+   `git remote set-url origin https://<Your_PAT>@github.com/<username>/<repository_name>.git`
+--3.Add and commit the changes
+--4.Push code:
+   `git push origin main/master`
+
+   # Helpful Github Tips:
+   
+   ## Create Pull Request:
+   1.Push <Your_branch> branch to github.
+   2.Open the repository on Github.
+   3.Go to the "Pull Requests" tab and click "New Pull Request"
+   4.Select branches and create PR.
+
+   GitHub Fork and Sync Workflow :
+
+   1. Fork a Repository:
+   a. Go to the repository on github and click on Fork.
+
+   2. Clone the Fork:
+    a.`git clone https://github.com/your-username/repo-name.git`
+   3. Sync changes from Upstream:
+    a.git remote add upstream https://github.com/original-owner/repo-name.git
+    b.git fetch upstream
+    c.git merge upstream/main
+
+# Git Aliases :
+Speed up your workflow by aliases:
+1. git config --global alias.co checkout
+2. git config --global alias.br branch
+3. git config --global alias.ci commit
+
+# GitHub Actions:
+.Significance: Automates workflows like testing, building and deploying code.
+.Example:
+```yml Start here:
+name: CI/CD Pipeline   #Name of the workflow
+on:
+ push:     #Triger workflow on push to main branch.
+  branches:
+   - main
+ pull_request:
+  branches:
+   - main
+jobs:
+  build:       #Define a job name 'build'
+   runs-on: ubuntu-latest   # Use the latest Ubuntu environment
+steps:
+ - name: Checkout Code
+   uses: actions/checkout@v2
+ - name: Install Dependencies
+   run: npm install
+   - name: Run Tests
+   run: npm test
+
+```Markdown
+
+#  References:
+ - Git Documentation
+ - GitHub Docs
+
+
+
+
+   
+   
+   
+   
 
 
 
